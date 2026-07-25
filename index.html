@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slavyanka - RP</title>
+
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <div class="background-wrapper">
+        <div class="bg-gradient"></div>
+        <div class="bg-particles"></div>
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-glow bg-glow-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="section active" id="home">
+            <div class="hero">
+                <div class="logo animate-scale">
+                    <div class="logo-inner">
+                        <img class="icon-logo" src="logo.png" alt="Logo">
+                    </div>
+                </div>
+                <h1 class="animate-fade-up">
+                    <div class="hero-title text-glow">ИГРАЙ В</div>
+                    <div class="hero-subtitle">Slavyanka RP</div>
+                </h1>
+                <p class="hero-desc animate-fade-up delay-1">НАЧНИ СВОЙ ПУТЬ К УСПЕХУ</p>
+                <div class="online-badge animate-fade-up delay-2">
+                    <span class="pulse-dot"></span>
+                    ОНЛАЙН <span id="onlineCount">--</span>
+                </div>
+                <button class="btn-primary animate-fade-up delay-3">
+                    <span class="btn-text">НАЧАТЬ ИГРАТЬ</span>
+                    <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <div class="btn-shine"></div>
+                </button>
+                <div class="features animate-fade-up delay-4">
+                    <div class="feature">
+                        <svg class="feature-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Уникальная экономика</span>
+                    </div>
+                    <div class="feature">
+                        <svg class="feature-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Честная администрация</span>
+                    </div>
+                    <div class="feature">
+                        <svg class="feature-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Без лагов и вайпов</span>
+                    </div>
+                <div class="why-wrap animate-fade-up delay-5">
+                    <div class="why-title">ПОЧЕМУ <span>SLAVYANKA</span></div>
+                    <div class="why-grid">
+                        <div class="why-card">
+                            <div class="why-ico">🚓</div>
+                            <div class="why-h">Настоящий RP</div>
+                            <div class="why-t">Работы, фракции, документы и правила — как на серьёзных серверах.</div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-ico">⚙️</div>
+                            <div class="why-h">Свой клиент</div>
+                            <div class="why-t">Уникальный HUD, графика и удобные системы прямо в телефоне.</div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-ico">🛡️</div>
+                            <div class="why-h">Античит</div>
+                            <div class="why-t">Защита и контроль — меньше читеров, честнее игра.</div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-ico">🔥</div>
+                            <div class="why-h">Ивенты и обновы</div>
+                            <div class="why-t">Регулярные обновления, акции и события — скучно не будет.</div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <a class="qa-btn" href="#" onclick="openModal('how');return false;">
+                            <span class="qa-ico">📘</span>
+                            <span class="qa-txt">Как начать</span>
+                        </a>
+                        <a class="qa-btn" href="#" onclick="openModal('rules');return false;">
+                            <span class="qa-ico">📜</span>
+                            <span class="qa-txt">Правила</span>
+                        </a>
+                        <a class="qa-btn qa-btn-accent" href="#" onclick="copyConnect();return false;">
+                            <span class="qa-ico">🔗</span>
+                            <span class="qa-txt">Скопировать IP</span>
+                        </a>
+                    </div>
+
+                    <div class="social-row">
+                        <a class="social-btn" href="#" onclick="openSocial('vk');return false;" aria-label="VK">VK</a>
+                        <a class="social-btn" href="#" onclick="openSocial('tg');return false;" aria-label="Telegram">TG</a>
+                        <a class="social-btn" href="#" onclick="openSocial('yt');return false;" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="section" id="stats">
+            <div>
+                <h2 class="section-title">СТАТИСТИКА <span class="title-accent">СЕРВЕРОВ</span></h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="stat-label">СЕРВЕРОВ</div>
+                        <div class="stat-value">8</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-label">ОНЛАЙН</div>
+                        <div class="stat-value counter" data-target="1450">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <div class="stat-label">ИГРАЮТ СЕЙЧАС</div>
+                        <div class="stat-value counter" data-target="942">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-label">ЗАЩИТА</div>
+                        <div class="stat-value">100%</div>
+                    </div>
+                </div>
+
+                <div class="server-panel">
+                    <div class="server-panel-title">СЕРВЕРА <span>ONLINE</span></div>
+                    <div class="server-list" id="serverList">
+                        <div class="server-skeleton">Загрузка статуса...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div class="section" id="news">
+            <div>
+                <h2 class="section-title">ПОСЛЕДНИЕ <span class="title-accent">НОВОСТИ</span></h2>
+
+                <div class="news-card">
+                    <div class="news-image" style="background-image:url('news1.jpg')">
+                        <div class="news-overlay"></div>
+                        <div class="news-play-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Глобальное обновление: новый HUD и графика</div>
+                        <div class="news-desc">Переработали интерфейс, эффекты и визуал — теперь картинка сочнее, а элементы читаются лучше даже в движении.</div>
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            06.01.2026
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image" style="background-image:url('news2.jpg')">
+                        <div class="news-overlay"></div>
+                        <div class="news-play-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Добавили инвентарь и документы</div>
+                        <div class="news-desc">Инвентарь, паспорт и служебные удостоверения — всё работает быстро и без лишних кликов.</div>
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            04.01.2026
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image" style="background-image:url('news3.jpg')">
+                        <div class="news-overlay"></div>
+                        <div class="news-play-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Система бумбокса и сабвуфера</div>
+                        <div class="news-desc">Музыка в игре стала удобнее: выбирай треки, включай саб и катайся с настроением.</div>
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            02.01.2026
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image" style="background-image:url('news4.jpg')">
+                        <div class="news-overlay"></div>
+                        <div class="news-play-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Оптимизация и стабильность</div>
+                        <div class="news-desc">Подкрутили производительность и сетевую часть — меньше фризов, быстрее загрузки, приятнее игра.</div>
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            30.12.2025
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="btn-secondary">ПОКАЗАТЬ ЕЩЁ</button>
+            </div>
+        </div>
+
+
+        <!-- Forum Section -->
+        <div class="section" id="forum">
+            <div>
+                <h2 class="section-title">НАШ <span class="title-accent">ФОРУМ</span></h2>
+                <p style="text-align:center;color:#a1a1aa;margin-bottom:16px;">
+                    Обсуждения, жалобы, предложения и новости проекта.
+                </p>
+
+                <a class="btn-primary" id="forumOpenBtn" href="#" target="_blank" rel="noopener">
+                    <span class="btn-text">ОТКРЫТЬ ФОРУМ</span>
+                    <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+                    </svg>
+                    <div class="btn-shine"></div>
+                </a>
+
+                <div style="height:14px;"></div>
+
+                <div class="stat-card" style="padding:18px;">
+                    <div class="stat-label" style="margin-bottom:10px;">Ссылка на форум</div>
+                    <div style="color:#d4d4d8;font-weight:700;word-break:break-all;" id="forumUrlText">https://forum.example.com</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Donate Section -->
+        <div class="section" id="donate">
+            <div>
+                <h2 class="section-title">ПОПОЛНИ <span class="title-accent">СЧЕТ</span></h2>
+                <p style="text-align: center; color: #a1a1aa; margin-bottom: 16px;">В ПАРУ КЛИКОВ</p>
+                <div class="donate-form">
+                    <div class="form-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                        </svg>
+                        <input type="text" class="form-input" placeholder="SERVER 41" value="SERVER 41">
+                    </div>
+                    <div class="form-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <input type="text" class="form-input" placeholder="ВВЕДИТЕ ВАШ ИГРОВОЙ НИК">
+                    </div>
+                    <div class="form-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <input type="email" class="form-input" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
+                    </div>
+                    <div class="form-group">
+                        <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <input type="text" class="form-input" placeholder="СУММА ПОПОЛНЕНИЯ">
+                    </div>
+                    <div class="payment-methods">
+                        <div class="payment-label">Способ пополнения</div>
+                        <div class="payment-grid">
+                            <button class="payment-btn payment-sbp" type="button" aria-label="СБП"></button>
+                            <button class="payment-btn payment-payeer" type="button" aria-label="Payeer"></button>
+                            <button class="payment-btn payment-qiwi" type="button" aria-label="QIWI"></button>
+                            <button class="payment-btn payment-card" type="button" aria-label="Карта"></button>
+                            <button class="payment-btn payment-crypto" type="button" aria-label="Крипто"></button>
+                            <button class="payment-btn payment-yoomoney" type="button" aria-label="ЮMoney"></button>
+</div>
+                    </div>
+                    <button class="btn-primary">
+                        <span class="btn-text">ПОПОЛНИТЬ</span>
+                        <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                        </svg>
+                        <div class="btn-shine"></div>
+                    </button>
+                    <p class="legal-text">
+                        Продолжая, Вы соглашаетесь с <span class="legal-link">условиями оферты</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-indicator" id="navIndicator"></div>
+                <button class="nav-btn active" onclick="switchTab('home', this)">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <div class="nav-label">ГЛАВНАЯ</div>
+                </button>
+                <button class="nav-btn" onclick="switchTab('stats', this)">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                        <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                    </svg>
+                    <div class="nav-label">СЕРВЕРА</div>
+                </button>
+                <button class="nav-btn" onclick="switchTab('news', this)">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2"/>
+                        <line x1="7" y1="10" x2="13" y2="10"></line>
+                        <line x1="7" y1="14" x2="13" y2="14"></line>
+                    </svg>
+                    <div class="nav-label">НОВОСТИ</div>
+                </button>
+
+                <button class="nav-btn" onclick="switchTab('forum', this)">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+                    </svg>
+                    <div class="nav-label">ФОРУМ</div>
+                </button>
+
+                <button class="nav-btn" onclick="switchTab('donate', this)">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="1" y="4" width="22" height="16" rx="2"></rect>
+                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                    </svg>
+                    <div class="nav-label">ДОНАТ</div>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+  {
+    "imageurl": "http://wh27264.web2.maze-tech.ru/news1.jpg",
+    "title": "Тестовая новость",
+    "url": "https://t.me/taskJson"
+  },
+  {
+    "imageurl": "http://wh27264.web2.maze-tech.ru/news2.jpg",
+    "title": "Эливия Мобайл",
+    "url": "https://t.me/taskJson"
+  },
+  {
+    "imageurl": "http://wh27264.web2.maze-tech.ru/news3.jpg",
+    "title": "test",
+    "url": "https://t.me/taskJson"
+  }
+]
